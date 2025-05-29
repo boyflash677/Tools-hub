@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ToolsBurst - Your Hacker Toolkit</title>
+  <title>ToolsBurst - Hacker Toolkit</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
@@ -32,7 +32,7 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 30px 20px;
     }
@@ -41,32 +41,38 @@
       background: #1b1b1b;
       border: 1px solid #333;
       padding: 25px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      transition: 0.3s ease;
-    }
-
-    .category:hover {
-      transform: scale(1.02);
-      border-color: #0072ff;
+      border-radius: 12px;
+      margin-bottom: 35px;
     }
 
     .category h2 {
       color: #00c6ff;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
 
-    .category ul {
-      list-style-type: none;
-      padding-left: 0;
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
     }
 
-    .category ul li {
-      margin-bottom: 10px;
+    .link-card {
+      background: #121212;
+      border: 1px solid #333;
+      border-radius: 8px;
+      padding: 14px;
+      text-align: center;
+      transition: 0.3s ease;
     }
 
-    .category a {
+    .link-card:hover {
+      transform: scale(1.03);
+      border-color: #00c6ff;
+    }
+
+    .link-card a {
       color: #1abc9c;
+      font-weight: bold;
       text-decoration: none;
     }
 
@@ -107,15 +113,6 @@
       padding: 20px;
       margin-top: 40px;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 26px;
-      }
-      .category h2 {
-        font-size: 20px;
-      }
-    }
   </style>
 </head>
 <body>
@@ -128,46 +125,51 @@
 
   <div class="container">
 
+    <!-- CATEGORY: HACKING TOOLS -->
     <div class="category">
-      <h2>💻 Ethical Hacking</h2>
-      <ul>
-        <li>✅ Kali Nethunter Tools</li>
-        <li>✅ Packet Sniffers & Network Scanners</li>
-        <li>✅ IP Trackers & Info Grabbers</li>
-        <li><a href="https://t.me/toolsburst">👉 View All Hacking Tools</a></li>
-      </ul>
+      <h2>💻 Ethical Hacking Tools</h2>
+      <div class="link-grid">
+        <div class="link-card"><a href="#">IP Tracker v2</a></div>
+        <div class="link-card"><a href="#">WiFi Cracker GUI</a></div>
+        <div class="link-card"><a href="#">Keylogger Python</a></div>
+        <div class="link-card"><a href="#">Phishing Page Generator</a></div>
+      </div>
     </div>
 
+    <!-- CATEGORY: ANDROID TOOLS -->
     <div class="category">
-      <h2>📱 Android Tools</h2>
-      <ul>
-        <li>✅ Root Utilities & System Modifiers</li>
-        <li>✅ Battery Saver / Booster Mods</li>
-        <li>✅ Customization & Automation</li>
-        <li><a href="https://t.me/toolsburst">👉 View All Android Tools</a></li>
-      </ul>
+      <h2>📱 Android Tools & Mods</h2>
+      <div class="link-grid">
+        <div class="link-card"><a href="#">Battery Doctor Pro</a></div>
+        <div class="link-card"><a href="#">SystemUI Tweaker</a></div>
+        <div class="link-card"><a href="#">NetGuard Premium</a></div>
+        <div class="link-card"><a href="#">Tasker Profiles Pack</a></div>
+      </div>
     </div>
 
+    <!-- CATEGORY: PAID APPS FREE -->
     <div class="category">
       <h2>💸 Paid Apps for Free</h2>
-      <ul>
-        <li>✅ Modded VPNs & Security Apps</li>
-        <li>✅ Premium Editors (Photo/Video)</li>
-        <li>✅ Productivity & Utility Mods</li>
-        <li><a href="https://t.me/toolsburst">👉 View Free Premium Apps</a></li>
-      </ul>
+      <div class="link-grid">
+        <div class="link-card"><a href="#">Nova Launcher Prime</a></div>
+        <div class="link-card"><a href="#">Kinemaster Pro Mod</a></div>
+        <div class="link-card"><a href="#">InShot Premium</a></div>
+        <div class="link-card"><a href="#">VPN Pro Unlimited</a></div>
+      </div>
     </div>
 
+    <!-- CATEGORY: CYBER TRICKS -->
     <div class="category">
       <h2>🧠 Cyber Tips & Secret Tricks</h2>
-      <ul>
-        <li>✅ Telegram Exploits & Loopholes</li>
-        <li>✅ Android Bypass Methods</li>
-        <li>✅ Secret Tools Hidden in Plain Sight</li>
-        <li><a href="https://t.me/toolsburst">👉 Learn Secret Tricks</a></li>
-      </ul>
+      <div class="link-grid">
+        <div class="link-card"><a href="#">Telegram Hidden Bots</a></div>
+        <div class="link-card"><a href="#">App Lock Bypass Trick</a></div>
+        <div class="link-card"><a href="#">Free Data Bug</a></div>
+        <div class="link-card"><a href="#">Fake Login Clone</a></div>
+      </div>
     </div>
 
+    <!-- CTA Join -->
     <div class="join">
       <h2>🚀 Join the Revolution</h2>
       <p>Get Daily Drops | Stay Ahead | Access Secret Tools<br>Only on Telegram</p>
