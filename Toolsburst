@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ToolsBurst - Hacking, Tools & Mod APKs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: #00ffe1;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #cccccc;
+    }
+
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .category {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .category h2 {
+      color: #00ffe1;
+      margin-bottom: 10px;
+    }
+
+    .category ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .category ul li {
+      margin-bottom: 8px;
+    }
+
+    .category a {
+      text-decoration: none;
+      color: #1abc9c;
+    }
+
+    .join-box {
+      background: #292929;
+      border-left: 5px solid #00ffe1;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .join-box a {
+      display: inline-block;
+      background: #00ffe1;
+      color: #000;
+      padding: 12px 25px;
+      margin-top: 15px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .disclaimer {
+      font-size: 13px;
+      color: #888;
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .category h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ToolsBurst</h1>
+    <p>Your One-Stop Zone for Hacking, Tools, Modded APKs & More!<br>
+    Ethical Hacking | Android Tools | Paid Apps | Cyber Tips</p>
+  </header>
+
+  <div class="container">
+
+    <div class="category">
+      <h2>💻 Ethical Hacking</h2>
+      <ul>
+        <li>Kali Nethunter Tools</li>
+        <li>Packet Sniffers</li>
+        <li>Network Analyzers</li>
+        <li><a href="https://t.me/your_hacking_tools_channel">View All Hacking Tools</a></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>📱 Android Tools</h2>
+      <ul>
+        <li>Root Utilities</li>
+        <li>System Mod Apps</li>
+        <li>Advanced Control Tools</li>
+        <li><a href="https://t.me/your_android_tools_channel">View All Android Tools</a></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>💸 Paid Apps for Free</h2>
+      <ul>
+        <li>Premium VPNs</li>
+        <li>Modded Editors</li>
+        <li>Productivity Apps</li>
+        <li><a href="https://t.me/your_paid_apps_channel">View Free Premium Apps</a></li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>🧠 Cyber Tips & Tricks</h2>
+      <ul>
+        <li>Bypass Methods</li>
+        <li>Telegram Tricks</li>
+        <li>Hidden Tool Tutorials</li>
+        <li><a href="https://t.me/your_cyber_tips_channel">Learn Secret Tricks</a></li>
+      </ul>
+    </div>
+
+    <div class="join-box">
+      <h2>🚀 Join ToolsBurst Now</h2>
+      <p>Daily updates, exclusive tools, and tricks.<br>Stay ahead of the game!</p>
+      <a href="https://t.me/your_main_channel">Join Our Channel</a>
+    </div>
+
+    <div class="disclaimer">
+      ⚠️ This platform is for educational and research purposes only. We do not promote illegal activity. Use responsibly.
+    </div>
+
+  </div>
+
+</body>
+</html>
