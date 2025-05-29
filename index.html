@@ -1,186 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ToolsBurst - Hacker Toolkit</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToolsBurst | Hacking Tools & Courses</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #0e0e0e;
-      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      background: linear-gradient(135deg, #000000, #0f0f0f);
+      color: #00ff99;
     }
-
     header {
-      background: linear-gradient(to right, #00c6ff, #0072ff);
-      padding: 50px 20px;
       text-align: center;
+      padding: 2rem;
+      border-bottom: 2px solid #00ff99;
     }
-
     header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 36px;
-      margin: 0;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
     }
-
     header p {
-      font-size: 16px;
-      margin-top: 10px;
-      color: #e0e0e0;
+      font-size: 1.2rem;
+      color: #00ffaa;
     }
-
     .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 30px 20px;
+      padding: 2rem;
     }
-
     .category {
-      background: #1b1b1b;
-      border: 1px solid #333;
-      padding: 25px;
-      border-radius: 12px;
-      margin-bottom: 35px;
+      margin-bottom: 3rem;
     }
-
     .category h2 {
-      color: #00c6ff;
-      margin-bottom: 18px;
+      border-left: 5px solid #00ff99;
+      padding-left: 1rem;
+      font-size: 1.8rem;
+      color: #00ffaa;
+      margin-bottom: 1rem;
     }
-
     .link-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
     }
-
     .link-card {
-      background: #121212;
-      border: 1px solid #333;
-      border-radius: 8px;
-      padding: 14px;
-      text-align: center;
-      transition: 0.3s ease;
-    }
-
-    .link-card:hover {
-      transform: scale(1.03);
-      border-color: #00c6ff;
-    }
-
-    .link-card a {
-      color: #1abc9c;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .join {
-      background: #0072ff;
-      text-align: center;
-      padding: 40px 20px;
-      border-radius: 12px;
-      margin-top: 40px;
-    }
-
-    .join h2 {
-      margin: 0;
-      font-size: 28px;
-      color: #fff;
-    }
-
-    .join p {
-      color: #e0e0e0;
-      margin: 15px 0;
-    }
-
-    .join a {
-      display: inline-block;
-      margin-top: 15px;
-      background: #00c6ff;
-      padding: 14px 30px;
-      color: #000;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #888;
-      padding: 20px;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>ToolsBurst</h1>
-    <p>Your One-Stop Zone for Hacking, Tools, Modded APKs & More!</p>
-    <p>Ethical Hacking | Android Tools | Paid Apps | Cyber Tips | Secret Tricks</p>
-  </header>
-
-  <div class="container">
-
-    <!-- CATEGORY: HACKING TOOLS -->
-    <div class="category">
-      <h2>💻 Ethical Hacking Tools</h2>
-      <div class="link-grid">
-        <div class="link-card"><a href="#">IP Tracker v2</a></div>
-        <div class="link-card"><a href="#">WiFi Cracker GUI</a></div>
-        <div class="link-card"><a href="#">Keylogger Python</a></div>
-        <div class="link-card"><a href="#">Phishing Page Generator</a></div>
-      </div>
-    </div>
-
-    <!-- CATEGORY: ANDROID TOOLS -->
-    <div class="category">
-      <h2>📱 Android Tools & Mods</h2>
-      <div class="link-grid">
-        <div class="link-card"><a href="#">Battery Doctor Pro</a></div>
-        <div class="link-card"><a href="#">SystemUI Tweaker</a></div>
-        <div class="link-card"><a href="#">NetGuard Premium</a></div>
-        <div class="link-card"><a href="#">Tasker Profiles Pack</a></div>
-      </div>
-    </div>
-
-    <!-- CATEGORY: PAID APPS FREE -->
-    <div class="category">
-      <h2>💸 Paid Apps for Free</h2>
-      <div class="link-grid">
-        <div class="link-card"><a href="#">Nova Launcher Prime</a></div>
-        <div class="link-card"><a href="#">Kinemaster Pro Mod</a></div>
-        <div class="link-card"><a href="#">InShot Premium</a></div>
-        <div class="link-card"><a href="#">VPN Pro Unlimited</a></div>
-      </div>
-    </div>
-
-    <!-- CATEGORY: CYBER TRICKS -->
-    <div class="category">
-      <h2>🧠 Cyber Tips & Secret Tricks</h2>
-      <div class="link-grid">
-        <div class="link-card"><a href="#">Telegram Hidden Bots</a></div>
-        <div class="link-card"><a href="#">App Lock Bypass Trick</a></div>
-        <div class="link-card"><a href="#">Free Data Bug</a></div>
-        <div class="link-card"><a href="#">Fake Login Clone</a></div>
-      </div>
-    </div>
-
-    <!-- CTA Join -->
-    <div class="join">
-      <h2>🚀 Join the Revolution</h2>
-      <p>Get Daily Drops | Stay Ahead | Access Secret Tools<br>Only on Telegram</p>
-      <a href="https://t.me/toolsburst">Join @toolsburst</a>
-    </div>
-
-    <div class="footer">
-      ⚠️ For Educational & Testing Purpose Only. We do not promote illegal activity.
-    </div>
-
-  </div>
-
-</body>
-</html>
+      background: #111;
+      padding: 1rem;
+      border: 1px solid #00ff
