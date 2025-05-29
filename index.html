@@ -6,21 +6,28 @@
   <title>ToolsBurst by Innocent</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <style>
-    * {margin: 0; padding: 0; box-sizing: border-box;}
-    body {
-      background: #0b0b0c;
-      color: #f1f1f1;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      overflow: hidden;
       font-family: 'Orbitron', sans-serif;
+      color: #f1f1f1;
+    }
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
     }
     header {
       text-align: center;
-      background: #141414;
       padding: 30px 20px;
-      border-bottom: 2px solid #00ffe7;
+      background-color: rgba(0, 0, 0, 0.6);
     }
     header h1 {
       font-size: 3rem;
       color: #00ffe7;
+      text-shadow: 0 0 10px #00ffe7;
     }
     header p {
       color: #ccc;
@@ -43,21 +50,23 @@
     }
 
     .card {
-      background: #1b1b1d;
+      background: rgba(10, 10, 10, 0.7);
       border-radius: 10px;
       padding: 20px;
       margin-bottom: 25px;
       border: 1px solid #2f2f2f;
       transition: 0.3s;
+      backdrop-filter: blur(6px);
     }
 
     .card:hover {
-      background: #262626;
+      background: rgba(30, 30, 30, 0.8);
     }
 
     .card h3 {
       color: #00ffe7;
       font-size: 1.3rem;
+      text-shadow: 0 0 5px #00ffe7;
     }
 
     .card p {
@@ -81,14 +90,16 @@
       border-radius: 5px;
       font-weight: bold;
       text-decoration: none;
+      box-shadow: 0 0 10px #00ffe7;
     }
 
     footer {
-      background: #111;
+      background: rgba(0, 0, 0, 0.6);
       text-align: center;
       padding: 20px;
-      color: #777;
+      color: #aaa;
       font-size: 0.9rem;
+      margin-top: 40px;
     }
 
     .telegram {
@@ -100,57 +111,89 @@
       font-weight: bold;
       text-decoration: none;
     }
-
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>ToolsBurst by Innocent</h1>
-    <p>Cheap, Yet Beast – Hacking Tools, Secret PDFs & Underground Tutorials</p>
-  </header>
+<canvas id="matrix"></canvas>
 
-  <div class="container">
+<header>
+  <h1>ToolsBurst by Innocent</h1>
+  <p>Cheap, Yet Beast – Hacking Tools, Secret PDFs & Underground Tutorials</p>
+</header>
 
-    <h2 class="section-title">🔥 Featured Tools & PDFs</h2>
+<div class="container">
 
-    <div class="card">
-      <h3>📁 Android RAT Tool + Tutorial</h3>
-      <p>Full access to Remote Access Tool + Video guide on setup & usage (No coding knowledge needed).</p>
-      <p class="price">₹49 Only</p>
-      <a href="#" class="button">Pay & Unlock</a>
-    </div>
+  <h2 class="section-title">🔥 Featured Tools & PDFs</h2>
 
-    <div class="card">
-      <h3>📄 WiFi Hacking PDF (No Root)</h3>
-      <p>Step-by-step PDF guide + free tools included. Works on Android & PC.</p>
-      <p class="price">₹29 Only</p>
-      <a href="#" class="button">Pay & Unlock</a>
-    </div>
-
-    <div class="card">
-      <h3>📽️ Private Video: Phishing Page Setup</h3>
-      <p>Learn how to setup phishing pages, grab IPs, redirect links & bypass detection.</p>
-      <p class="price">₹39 Only</p>
-      <a href="#" class="button">Pay & Unlock</a>
-    </div>
-
-    <div class="card">
-      <h3>🎬 On-Demand Movie (HD Print)</h3>
-      <p>Telegram delivery – Bollywood, Hollywood, South – your choice. Delivered in 15 mins.</p>
-      <p class="price">From ₹10</p>
-      <a href="#" class="button">Request on Telegram</a>
-    </div>
-
-    <div class="telegram">
-      <p>📩 Contact for payments or custom tools: <a href="https://t.me/ToolsBurstSupport" target="_blank">@ToolsBurstSupport</a></p>
-    </div>
-
+  <div class="card">
+    <h3>📁 Android RAT Tool + Tutorial</h3>
+    <p>Full access to Remote Access Tool + Video guide on setup & usage (No coding knowledge needed).</p>
+    <p class="price">₹49 Only</p>
+    <a href="#" class="button">Pay & Unlock</a>
   </div>
 
-  <footer>
-    &copy; 2025 ToolsBurst by Innocent | Underground Content for Educational Purpose Only.
-  </footer>
+  <div class="card">
+    <h3>📄 WiFi Hacking PDF (No Root)</h3>
+    <p>Step-by-step PDF guide + free tools included. Works on Android & PC.</p>
+    <p class="price">₹29 Only</p>
+    <a href="#" class="button">Pay & Unlock</a>
+  </div>
+
+  <div class="card">
+    <h3>📽️ Private Video: Phishing Page Setup</h3>
+    <p>Learn how to setup phishing pages, grab IPs, redirect links & bypass detection.</p>
+    <p class="price">₹39 Only</p>
+    <a href="#" class="button">Pay & Unlock</a>
+  </div>
+
+  <div class="card">
+    <h3>🎬 On-Demand Movie (HD Print)</h3>
+    <p>Telegram delivery – Bollywood, Hollywood, South – your choice. Delivered in 15 mins.</p>
+    <p class="price">From ₹10</p>
+    <a href="#" class="button">Request on Telegram</a>
+  </div>
+
+  <div class="telegram">
+    <p>📩 Contact for payments or custom tools: <a href="https://t.me/ToolsBurstSupport" target="_blank">@ToolsBurstSupport</a></p>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 ToolsBurst by Innocent | Underground Content for Educational Purpose Only.
+</footer>
+
+<!-- Matrix Background JS -->
+<script>
+  const canvas = document.getElementById('matrix');
+  const ctx = canvas.getContext('2d');
+
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+
+  const letters = "01_¥#&$@%_+<>".split("");
+  const fontSize = 14;
+  const columns = canvas.width / fontSize;
+  const drops = Array(Math.floor(columns)).fill(1);
+
+  function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#00ffe7";
+    ctx.font = fontSize + "px monospace";
+    for (let i = 0; i < drops.length; i++) {
+      const text = letters[Math.floor(Math.random() * letters.length)];
+      ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  setInterval(draw, 33);
+</script>
 
 </body>
 </html>
